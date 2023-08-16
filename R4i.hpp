@@ -15,7 +15,7 @@ using u32 = std::uint32_t;
 #pragma pack(push, 2)
 #endif
 
-struct alignas(2) SecretArea {
+struct alignas(2) __attribute__((packed)) SecretArea {
   u32 magic;
   u16 arm9chk;
   u16 arm7chk;
