@@ -2,9 +2,11 @@
 #define _DES_H
 
 #if defined(__cplusplus)
+#include <cstddef>
 #include <cstdint>
 extern "C" {
 #else
+#include <stddef.h>
 #include <stdint.h>
 #endif
 
